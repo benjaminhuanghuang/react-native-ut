@@ -1,5 +1,7 @@
 import { connect } from 'react-redux'
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import {
   StyleSheet,
   Text,
@@ -15,10 +17,10 @@ import { repositories } from '../utils/endpoints';
 export class RepoPage extends Component {
   
   static propTypes = {
-    getRepos: React.PropTypes.func.isRequired,
-    repos: React.PropTypes.object.isRequired,
-    selectRepo: React.PropTypes.func,
-    selected: React.PropTypes.bool,
+    getRepos: PropTypes.func.isRequired,
+    repos: PropTypes.object.isRequired,
+    selectRepo: PropTypes.func,
+    selected: PropTypes.bool,
   };
   
   componentDidMount() {

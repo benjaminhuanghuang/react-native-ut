@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   ListView,
   StyleSheet,
@@ -28,9 +29,9 @@ const RepoList = (props) => {
 };
 
 RepoList.propTypes = {
-  repos: React.PropTypes.array.isRequired,
-  selected: React.PropTypes.number,
-  selectRepo: React.PropTypes.func,
+  repos: PropTypes.array.isRequired,
+  selected: PropTypes.number,
+  selectRepo: PropTypes.func,
 };
 
 export const styles = StyleSheet.create({

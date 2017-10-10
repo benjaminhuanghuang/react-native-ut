@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import {
   StyleSheet,
   Text,
@@ -24,9 +26,9 @@ const RepoItem = (props) => {
 };
 
 RepoItem.propTypes = {
-  isSelected: React.PropTypes.bool,
-  repo: React.PropTypes.object.isRequired,
-  selectRepo: React.PropTypes.func,
+  isSelected: PropTypes.bool,
+  repo: PropTypes.object.isRequired,
+  selectRepo: PropTypes.func,
 };
 
 RepoItem.defaultProps = {
